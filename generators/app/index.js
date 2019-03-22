@@ -127,7 +127,8 @@ module.exports = yeoman.generators.Base.extend({
     if (!this.options['skip-dependencies']) {
       this.log(chalk.blue.bold('Installing Dependencies...'));
       this.installDependencies({
-        skipMessage: true
+        skipMessage: true,
+        bower: false
       });
     }
   },
